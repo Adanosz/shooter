@@ -1,9 +1,13 @@
-<<<<<<< HEAD
 const playerPosition = (map) => {
   const playerPosition = { playerY: 0, playerX: map.length / 2 };
   return playerPosition;
 };
-=======
+
+const getRandomNumber = (upperLimit) => {
+  const num = Math.floor(Math.random() * (upperLimit + 1));
+  return num;
+};
+
 let mapHight = 20
 let mapWidth = 20
 
@@ -14,4 +18,3 @@ const generate2D = (n, m) => {
   }
   return arr;
 };
->>>>>>> a03a0302118632e371063851b7cdf45ae4d3640f
