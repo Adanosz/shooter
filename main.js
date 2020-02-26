@@ -16,8 +16,8 @@ const generateDebris = (map, numberOfDebris) => {
   return debrisPosition;
 };
 
-let mapHight = 20
-let mapWidth = 20
+let MAPHEIGHT = 20;
+let MAPWIDTH = 20;
 
 const generate2D = (n, m) => {
   const arr = new Array(n);
