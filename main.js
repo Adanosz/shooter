@@ -8,6 +8,14 @@ const getRandomNumber = (upperLimit) => {
   return num;
 };
 
+const generateDebris = (map, numberOfDebris) => {
+  const debrisPosition = {};
+  for (let i = 1; i < map.length; i++) {
+    debrisPosition[`debris${i}`] = getRandomNumber(map.length);
+  }
+  return debrisPosition;
+};
+
 let mapHight = 20
 let mapWidth = 20
 
